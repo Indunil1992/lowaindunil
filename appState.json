@@ -1,0 +1,111 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "16e85e28-0c81-479b-8e04-5bac14ac30d5": {
+        "id": "16e85e28-0c81-479b-8e04-5bac14ac30d5",
+        "parent": null,
+        "name": "lowaindunil",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "1ff8fcda-4eca-446c-8ba2-95eb405ca9c3"
+        ],
+        "isRemovable": false,
+        "filePath": "lowaindunil"
+      },
+      "1ff8fcda-4eca-446c-8ba2-95eb405ca9c3": {
+        "id": "1ff8fcda-4eca-446c-8ba2-95eb405ca9c3",
+        "parent": "16e85e28-0c81-479b-8e04-5bac14ac30d5",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "lowaindunil/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed in lowa using github\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0,
+          "handler": "handler"
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "727f48fb-0047-4fea-b2c5-107ba2279e17": {
+        "id": "727f48fb-0047-4fea-b2c5-107ba2279e17",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.lowaindunilfunction = require(\"./lowaindunil/function.js\").handler;"
+      },
+      "29717f43-91a1-48f4-a480-c7fb6d188239": {
+        "id": "29717f43-91a1-48f4-a480-c7fb6d188239",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "16e85e28-0c81-479b-8e04-5bac14ac30d5",
+    "openFiles": [
+      "1ff8fcda-4eca-446c-8ba2-95eb405ca9c3"
+    ],
+    "currentFileId": "1ff8fcda-4eca-446c-8ba2-95eb405ca9c3",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "AWS_REGION",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "lowaindunil",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-central1",
+    "platform": "GCP",
+    "platformRegions": {
+      "AWS": "us-east-1"
+    },
+    "lastSave": 1568783987336
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "lowaindunil",
+      "url": "https://github.com/Indunil1992/lowaindunil"
+    }
+  }
+}
